@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <LetterDef ParentName="NegativeEvent">
+        <defName>GDFP_DeathQuestionMark</defName>
+        <letterClass>GDFP.DeathLetter</letterClass>
+    </LetterDef>
+
+    <LetterDef ParentName="PositiveEvent">
+        <defName>GDFP_MapAuthor</defName>
+        <letterClass>GDFP.AuthorLetter</letterClass>
+    </LetterDef>
+
+    <LetterDef ParentName="PositiveEvent">
+        <defName>GDFP_PostieLetter</defName>
+    </LetterDef>
+
+    <LetterDef>
+        <defName>MSSF_CallingCard</defName>
+        <color>(175, 176, 185)</color>
+        <flashColor>(160, 170, 180)</flashColor>
+        <flashInterval>90</flashInterval>
+        <arriveSound>LetterArrive</arriveSound>
+        <letterClass>GDFP.AuthorLetter</letterClass>
+    </LetterDef>
+
+    <ThingDef>
+        <defName>MSSF_CallingCard</defName>
+        <label>Calling Card</label>
+        <description>An odd card found near your grave...</description>
+
+        <category>Item</category>
+        <thingClass>ThingWithComps</thingClass>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>false</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="MSSFP.Comps.CompProperties_Readable">
+                <letterDef>MSSF_CallingCard</letterDef>
+                <letterLabel>Calling Card</letterLabel>
+                <letterText>The front of the card bares a mysterious emblem you don't recognise, the back of the card has the following hastily scribbled on it:\n\n"Business of the Speaky Blinders - Let dead men rest."</letterText>
+                <buttonLabel>Read</buttonLabel>
+                <buttonDesc>Read the strange letter</buttonDesc>
+                <buttonIcon>MSS_MysteriousLetter</buttonIcon>
+                <destroyOnRead>false</destroyOnRead>
+            </li>
+        </comps>
+
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+
+        <graphicData>
+            <texPath>MSS_MysteriousLetter</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <soundInteract>Standard_Pickup</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <stackLimit>1</stackLimit>
+    </ThingDef>
+</Defs>
