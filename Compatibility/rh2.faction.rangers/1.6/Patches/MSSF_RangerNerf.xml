@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Enlist.FactionEnlistOptionsDef[defName="RH2_Rangers"]/salaryIsEnabled</xpath>
+        <value>
+            <salaryIsEnabled>false</salaryIsEnabled>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Enlist.FactionEnlistOptionsDef[defName="RH2_Rangers"]/dropPodServiceIsEnabled</xpath>
+        <value>
+            <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Enlist.FactionEnlistOptionsDef[defName="RH2_Rangers"]/reinforcementsAreEnabled</xpath>
+        <value>
+            <reinforcementsAreEnabled>false</reinforcementsAreEnabled>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Enlist.FactionEnlistOptionsDef[defName="RH2_Rangers"]/provisionOptions</xpath>
+        <value>
+            <provisionOptions>
+			<li>
+				<provisionsLabelKey>RH.RangerProvisionsLabel</provisionsLabelKey>
+				<provisionsDescKey>RH.RangerProvisionsDesc</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Provisions</provisionsButtonIconTexPath>
+				<provisions>
+					<li>
+						<thing>FCP_Currency_Caps</thing>
+						<amountRange>500</amountRange>
+					</li>
+					<li>
+						<thing>FCPStimpack</thing>
+						<amountRange>5</amountRange>
+					</li>
+					<li>
+						<thing>BMT_ToxClear</thing>
+						<amountRange>3</amountRange>
+					</li>
+				</provisions>
+				<provisionsRestockInDays>5.0</provisionsRestockInDays>
+			</li>
+			
+			<li>
+				<provisionsLabelKey>RH.RangerProvisionsLabelRangerIssue</provisionsLabelKey>
+				<provisionsDescKey>RH.RangerProvisionsDescRangerIssue</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Ranger_Issue</provisionsButtonIconTexPath>
+				<provisions>
+					<li>
+						<thing>FCP_Apparel_NCR_Ranger_Patrol_Armor</thing>
+						<amountRange>1</amountRange>
+					</li>
+                    <li>
+						<thing>FCP_Apparel_NCR_Ranger_Hat_Grey</thing>
+						<amountRange>1</amountRange>
+					</li>
+                    <li>
+						<thing>FCP_Gun_NCR_Hunting_Rifle</thing>
+						<amountRange>1</amountRange>
+					</li>
+				</provisions>
+				<provisionsRestockInDays>60.00</provisionsRestockInDays>
+			</li>
+		</provisionOptions>
+        </value>
+    </Operation>
+</Patch>
