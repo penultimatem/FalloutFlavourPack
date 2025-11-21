@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <LetterDef ParentName="PositiveEvent">
+        <defName>MSSF_VaultTec</defName>
+        <color>(0, 238, 0)</color>
+        <flashColor>(20, 238, 20)</flashColor>
+    </LetterDef>
+</Defs>

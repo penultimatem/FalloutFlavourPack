@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="MechlinkImplant"]/comps</xpath>
+		<value>
+			<li Class="HediffCompProperties_GiveHediff">
+                <hediffDef>FCP_VATS_VatsLink</hediffDef>
+				<letterDef>MSSF_VaultTec</letterDef>
+				<skipIfAlreadyExists>true</skipIfAlreadyExists>
+				<atSeverity>0</atSeverity>
+				<disappearsAfterGiving>false</disappearsAfterGiving>
+				<letterLabel>V.A.T.S.</letterLabel>
+				<letterText>Tired of spraying and praying? Enter the Vault-Tec Assisted Targeting System (V.A.T.S.)! With a single button press, the chaos of the wasteland grinds to a halt, allowing you to survey the battlefield in tactical slow-motion. Analyze your enemy's weaknesses; target specific limbs to disarm a raider, cripple a Deathclaw's legs, or go for that critical headshot on a feral ghoul. V.A.T.S. calculates your hit probability, letting you dictate the perfect, cinematic attack. Make every shot count and turn the tide of any encounter. Lock on, line up, and let the carnage begin!</letterText>
+            </li>
+		</value>
+	</Operation>
+</Patch>

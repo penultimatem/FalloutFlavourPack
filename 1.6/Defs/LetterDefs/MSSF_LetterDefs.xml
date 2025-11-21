@@ -14,6 +14,12 @@
         <defName>GDFP_PostieLetter</defName>
     </LetterDef>
 
+    <LetterDef ParentName="PositiveEvent">
+        <defName>MSSF_VATSActive</defName>
+        <color>(0, 238, 0)</color>
+        <flashColor>(20, 238, 20)</flashColor>
+    </LetterDef>
+
     <LetterDef>
         <defName>MSSF_CallingCard</defName>
         <color>(175, 176, 185)</color>
