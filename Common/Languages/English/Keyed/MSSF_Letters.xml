@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <VoidAwakeningShamblerArrivalLabel>Feral ghoul assault</VoidAwakeningShamblerArrivalLabel>
+  <VoidAwakeningShamblerArrivalText>A horde of feral ghouls have been attracted by the void structures. Get ready!</VoidAwakeningShamblerArrivalText>
+  <RewardShamblerControlAbility>Feral ghoul control</RewardShamblerControlAbility>
+  <LetterLabelShamblerSwarmArrived>Feral ghoul approach</LetterLabelShamblerSwarmArrived>
+  <LetterLabelShamblerArrived>Feral ghoul approaches</LetterLabelShamblerArrived>
+  <LetterShamblerSwarmArrived>A group of {0} feral ghouls are approaching. Radiation has mutated their bodies and set them to murder.\n\nThey will now wander through the area. If they see a human, they will attack. If not, they will leave in a few days.\n\nIf you can capture one, you can study it for anomaly knowledge.</LetterShamblerSwarmArrived>
+  <LetterShamblerArrived>A feral ghouls is approaching. Radiation has mutated its body and set them to murder.\n\nIt will now wander through the area. If it sees a human, it will attack. If not, it will leave in a few days.\n\nIf you can capture it, you can study it for anomaly knowledge.</LetterShamblerArrived>
+  <LetterLabelShamblerAnimalsArrived>Ghoulified {ANIMALKIND_label}</LetterLabelShamblerAnimalsArrived>
+  <LetterShamblerAnimalsArrived>A group of ghoulified {ANIMALKIND_label} are approaching. Radiation has mutated their bodies and set them to murder.\n\nThey will now wander through the area. If they see a human, they will attack. If not, they will leave in a few days.\n\nIf you can capture one, you can study it for anomaly knowledge.</LetterShamblerAnimalsArrived>
+
+</LanguageData>

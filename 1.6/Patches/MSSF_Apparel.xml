@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]/apparel</xpath>
+		<value>
+			<apparel>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+				<bodyPartGroups>
+					<li>Eyes</li>
+				</bodyPartGroups>
+				<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AuthorityCap/AuthorityCap</wornGraphicPath>
+				<layers>
+					<li>EyeCover</li>
+				</layers>
+				<defaultOutfitTags>
+					<li>Worker</li>
+					<li>Soldier</li>
+				</defaultOutfitTags>
+			</apparel>
+		</value>
+	</Operation>
+</Patch>

@@ -2,4 +2,5 @@
 
 <LanguageData>
 	<MoneyFormat>£{0}</MoneyFormat>
+	<MSSFP_WeightPriceFormat>{0} £/kg</MSSFP_WeightPriceFormat>
 </LanguageData>

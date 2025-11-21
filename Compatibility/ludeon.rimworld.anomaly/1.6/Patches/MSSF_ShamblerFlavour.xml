@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ShamblerSwarmer"]/label</xpath>
+        <value>
+            <label>Feral Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ShamblerSoldier"]/label</xpath>
+        <value>
+            <label>Feral ghoul Roamer</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ShamblerGorehulk"]/label</xpath>
+        <value>
+            <label>Ghoul Hulk</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Ghoul"]/label</xpath>
+        <value>
+            <label>Partial Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/EntityCodexEntryDef[defName="Shambler"]/label</xpath>
+        <value>
+            <label>Feral Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/EntityCodexEntryDef[defName="Ghoul"]/label</xpath>
+        <value>
+            <label>Partial Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/EntityCodexEntryDef[defName="Gorehulk"]/label</xpath>
+        <value>
+            <label>Ghoul Hulk</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="Shambler"]/label</xpath>
+        <value>
+            <label>Feral Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="Shambler"]/description</xpath>
+        <value>
+            <description>This person has received a massive dose of radiation that has destroyed most of their upper reasoning. Feral ghouls are slow and mindless, and will attack relentlessly. After a few days on their feet, ghouls die from metabolic exhaustion. Captured ghouls can't move and thus won't expire.</description>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="ShamblerCorpse"]/label</xpath>
+        <value>
+            <label>Ghoul Corpse</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="ShamblerCorpse"]/description</xpath>
+        <value>
+            <description>This creature had previously been mutated by massive doses of radiation.</description>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/MutantDef[defName="Shambler"]/label</xpath>
+        <value>
+            <label>Feral Ghoul</label>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/MutantDef[defName="Shambler"]/description</xpath>
+        <value>
+            <description>A creature that has received a massive dose of radiation and lost all its upper reasoning.\n\nAbout feral ghouls: Feral Ghouls are people which have been mutated from massive doses of radiation. They attack living creatures relentlessly and their immunity to pain makes them difficult to kill. However, the radiation which mutated them severely impacted their survivability, so feral ghouls expire after a few days of movement.\n\nThere are ways to make your own feral ghouls and make yourself invisible to them, so they attack only outsiders.</description>
+        </value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/MutantDef[defName="Shambler"]/namePrefix</xpath>
+        <value>
+            <namePrefix>Ghoulified </namePrefix>
+        </value>
+    </Operation>
+</Patch>
