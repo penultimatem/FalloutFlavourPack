@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch> <!-- This file is a dirty copy/paste from the "Vanilla plus loot expirence for ancient urban ruins" which it rethemes for a solely fallout experience, however not every patch has been overwritten based on sensibility -->
+	<Operation Class="PatchOperationReplace"> <!-- Weapon boxes -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.8</weight>
+					<thingSetMaker Class="ThingSetMaker_Count"> <!-- Standard Gun -->
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<!-- Guns are from the Fallout Weapon mod, its the most comprehensive - resource dict patches them with duplicates anyway -->
+									<!-- Industrial handguns, smg, machine gun, rifle, and shotguns -->
+									<li>Gun_hssn_223Pistol</li>
+									<li>Gun_hssn_9mmMauser</li>
+									<li>Gun_hssn_10mmPistol</li>
+									<li>Gun_hssn_14mmPistol</li>
+									<li>Gun_hssn_44Magnum</li>
+									<li>Gun_hssn_ZipGun</li>
+									<li>Gun_hssn_LightSupportWeapon</li>
+									<li>Gun_hssn_Bozar</li>
+									<li>Gun_hssn_M60MG</li>
+									<li>Gun_hssn_G11AR</li>
+									<li>Gun_hssn_AK112AR</li>
+									<li>Gun_hssn_XL70E3AR</li>
+									<li>Gun_hssn_FNFAL</li>
+									<li>Gun_hssn_CombatShotgun</li>
+									<li>Gun_hssn_CAWS</li>
+									<li>Gun_hssn_PancorJackhammer</li>
+									<li>Gun_hssn_SawedOffShotgun</li>
+									<li>Gun_hssn_10mmSMG</li>
+									<li>Gun_hssn_GreaseGun</li>
+									<li>Gun_hssn_TommyGun</li>
+									<li>Gun_hssn_P90C</li>
+									<li>Gun_hssn_HuntingRifle</li>
+									<li>Gun_hssn_ScopedHuntingRifle</li>
+									<li>Gun_hssn_PipeRifle</li>
+									<li>Gun_hssn_BBGun</li>
+									<li>Gun_hssn_Wattz2000LaserRifle</li>
+									<li>Gun_hssn_MPLXPlasmaPistol</li>
+									<li>Gun_hssn_AER9LaserRifle</li>
+									<li>Gun_hssn_AssaultCarbine</li>
+									<li>Gun_hssn_MarksmanCarbine</li>
+									<li>Gun_hssn_ServiceRifle</li>
+									<li>Gun_hssn_SurvivalistsRifle</li>
+									<li>Gun_hssn_R91AssaultRifle</li>
+									<li>Gun_hssn_Type93AR</li>
+									<li>Weapon_hssn_Dynamite</li>
+									<li>Weapon_hssn_TinGrenade</li>
+									<li>Gun_hssn_357Magnum</li>
+									<li>Gun_hssn_45AutoPistol</li>
+									<li>Gun_hssn_9mmPistol</li>
+									<li>Gun_hssn_N99Pistol</li>
+									<li>Gun_hssn_12mmPistol</li>
+									<li>Gun_hssn_HuntingRevolver</li>
+									<li>Gun_hssn_RangerSequoia</li>
+									<li>Gun_hssn_PolicePistol</li>
+									<li>Gun_hssn_22Pistol</li>
+									<li>Gun_hssn_32Pistol</li>
+									<li>Gun_hssn_AutomaticRifle</li>
+									<li>Gun_hssn_LightMachineGun</li>
+									<li>Gun_hssn_BattleRifle</li>
+									<li>Gun_hssn_BrushGun</li>
+									<li>Gun_hssn_CowboyRepeater</li>
+									<li>Gun_hssn_LaLongueCarabine</li>
+									<li>Gun_hssn_TrailCarbine</li>
+									<li>Gun_hssn_308HuntingRifle</li>
+									<li>Gun_hssn_Scoped308HuntingRifle</li>
+									<li>Gun_hssn_VarmintRifle</li>
+									<li>Gun_hssn_CaravanShotgun</li>
+									<li>Gun_hssn_HuntingShotgun</li>
+									<li>Gun_hssn_LeverActionShotgun</li>
+									<li>Gun_hssn_RiotShotgun</li>
+									<li>Gun_hssn_SingleShotgun</li>
+									<li>Gun_hssn_MP10SMG</li>
+									<li>Gun_hssn_12mmSMG</li>
+									<li>Gun_hssn_22SMG</li>
+									<li>Gun_hssn_45AutoSMG</li>
+									<li>Gun_hssn_9mmSMG</li>
+									<li>Gun_hssn_NailGun</li>
+									<li></li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.4</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<!-- More powerful guns -->
+									<li>Gun_Minigun</li>
+									<li>Gun_SniperRifle</li>
+									<li>Gun_hssn_DKS501Sniper</li>
+									<li>Gun_hssn_WidowmakerShotgun</li>
+									<li>Gun_hssn_Needler</li>
+									<li>Gun_hssn_GaussPistol</li>
+									<li>Gun_hssn_44DesertEagle</li>
+									<li>Gun_hssn_Wattz1000LaserPistol</li>
+									<li>Gun_hssn_G86PlasmaPistol</li>
+									<li>Gun_hssn_YK32PulsePistol</li>
+									<li>Gun_hssn_P94PlasmaCaster</li>
+									<li>Gun_hssn_Flambe450Flamer</li>
+									<li>Weapon_hssn_PlasmaGrenade</li>
+									<li>Gun_hssn_PlasmaRifle</li>
+									<li>Gun_hssn_LAER</li>
+									<li>Gun_hssn_LaserRCW</li>
+									<li>Gun_hssn_GrenadeRifle</li>
+									<li>Gun_hssn_GrenadeLauncher</li>
+									<li>Gun_hssn_GrenadeAPW</li>
+									<li>Gun_hssn_AntiMaterielRifle</li>
+									<li>Gun_hssn_308SniperRifle</li>
+									<li>Gun_hssn_Ratslayer</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">
+					<weight>0.04</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<!-- Most powerful guns -->
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_Revolver_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_BoltActionRifle_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_ChainShotgun_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_HeavySMG_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_LMG_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_AssaultRifle_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_SniperRifle_Unique</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_Minigun_Unique</li>
+									<li>Gun_hssn_AlienBlaster</li>
+									<li>Gun_hssn_Wattz1000MagnetoLaser</li>
+									<li>Gun_hssn_SolarScorcher</li>
+									<li>Gun_hssn_L30GatlingLaser</li>
+									<li>Gun_hssn_TurboPlasmaCaster</li>
+									<li>Gun_hssn_YK42BPulseRifle</li>
+									<li>Gun_hssn_BigBazooka</li>
+									<li>Gun_hssn_CZ53Minigun</li>
+									<li>Gun_hssn_AvengerMinigun</li>
+									<li>Gun_hssn_VindicatorMinigun</li>
+									<li>Gun_hssn_M72GaussRifle</li>
+									<li>Gun_hssn_TriBeamLaserRifle</li>
+									<li>Gun_hssn_MultiplasRifle</li>
+									<li>Gun_hssn_Holorifle</li>
+									<li>Gun_hssn_M42FatMan</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- Generic materials -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_Materials"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.25</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+									<li>ComponentIndustrial</li>
+									<li>SubcoreBasic</li>
+									<li>SubcoreRegular</li>
+									<li>SubcoreHigh</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.5</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+									<li>Wastepack</li> <!-- It is fallout after all -->
+								</thingDefs>
+							</filter>
+							<countRange>1~4</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Synthread</li>
+									<li>Uranium</li>
+									<li>Steel</li>
+									<li>Neutroamine</li>
+								</thingDefs>
+							</filter>
+							<countRange>8~20</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- special loot -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_LEGO"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.4</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FCP_Currency_Caps</li>
+									<li>FCP_Currency_Legion_Denarius</li>
+									<li>FCP_Currency_NCR_Dollar</li>
+								</thingDefs>
+							</filter>
+							<countRange>100~500</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.25</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FCP_Item_Collectors_Edition_Lunchbox_Dirty</li>
+									<li>FCP_Item_Collectors_Edition_Lunchbox_Mint</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- electronics -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_ComputerAccessories"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.25</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+									<li>ComponentIndustrial</li>
+									<li>SubcoreBasic</li>
+									<li>SubcoreRegular</li>
+									<li>SubcoreHigh</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.5</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+									<li>SubcoreBasic</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- medical supplies -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_MedicalSupplies"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.1</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>AM_IntegratedTorsoArmor</li>
+									<li>AM_RampageParasite</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.8</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>MedicineIndustrial</li>
+									<li>FCPStimpak</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.2</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Seti_Stimpack</li> <!-- Super Stimpack -->
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Penoxycyline</li>
+									<li>Neutroamine</li>
+									<li>Seti_Buffout</li>
+									<li>Seti_Jet</li>
+									<li>Seti_RadX</li>
+									<li>Seti_Psycho</li>
+									<li>Seti_RadAway</li>
+									<li>Seti_Mentats</li>
+									<li>Seti_MedX</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~5</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.2</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Luciferium</li>
+									<li>Seti_Stimpack</li> <!-- Super Stimpack -->
+								</thingDefs>
+							</filter>
+							<countRange>2~7</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.05</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingSetMakerTagsToAllow>
+									<li>BionicEye</li>
+									<li>BionicArm</li>
+									<li>BionicLeg</li>
+									<li>BionicSpine</li>
+									<li>BionicHeart</li>
+								</thingSetMakerTagsToAllow>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.1</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingSetMakerTagsToAllow>
+									<li>PowerClaw</li>
+									<li>Joywire</li>
+									<li>Painstopper</li>
+								</thingSetMakerTagsToAllow>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- armour -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_FlakApparel"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>	<!-- armour -->
+									<li>FCP_Apparel_Legion_Explorer_Armor</li>
+									<li>FCP_Apparel_Legion_Recruit_Armor</li>
+									<li>FCP_Apparel_Legion_Prime_Armor</li>
+									<li>FCP_Apparel_Legion_Veteran_Armor</li>
+									<li>FCP_Apparel_Legion_Vexillarius_Armor</li>
+									<li>FCP_Apparel_Legion_Praetorian_Armor</li>
+									<li>FCP_Apparel_Legion_Centurion_Armor</li>
+									<li>FCP_Apparel_Legion_Plate</li>
+									<li>FCP_Apparel_Legion_Recruit_Decanus_Helmet</li>
+									<li>FCP_Apparel_Legion_Recruit_Helmet</li>
+									<li>FCP_Apparel_Legion_Prime_Decanus_Helmet</li>
+									<li>FCP_Apparel_Legion_Prime_Helmet</li>
+									<li>FCP_Apparel_Legion_Veteran_Decanus_Helmet</li>
+									<li>FCP_Apparel_Legion_Veteran_Helmet</li>
+									<li>FCP_Apparel_Legion_Vexillarius_Helmet</li>
+									<li>FCP_Apparel_Legion_Centurion_Helmet</li>
+									<li>FCP_Apparel_Legion_Legate_Helmet</li>
+									<li>FCP_Accessories_NCR_Bandoleer</li>
+									<li>FCP_Accessories_NCR_Mantle</li>
+									<li>FCP_Apparel_NCR_Trooper_MP_Uniform</li>
+									<li>FCP_Apparel_NCR_Generals_Uniform</li>
+									<li>FCP_Apparel_NCR_Ranger_Veteran_Duster</li>
+									<li>FCP_Apparel_NCR_Trooper_Armor</li>
+									<li>FCP_Apparel_NCR_Ranger_Veteran_Uniform</li>
+									<li>FCP_Apparel_NCR_Trooper_Bandoleer_Armor</li>
+									<li>FCP_Apparel_NCR_Trooper_Vest</li>
+									<li>FCP_Apparel_NCR_Trooper_Mantle_Armor</li>
+									<li>FCP_Apparel_NCR_Scout_Recon_Armor</li>
+									<li>FCP_Apparel_NCR_Ranger_Patrol_Armor</li>
+									<li>FCP_Apparel_NCRCF_Guard_Vest</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.1</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs> <!-- new power armour tier category -->
+									<li>FCP_Apparel_NCR_Salvaged_Power_Armor</li>
+									<li>FCP_Apparel_NCR_Ranger_Veteran_Armor</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- clothes -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_NormApparel"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.8</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs> <!-- normal clothes -->
+									<li>FCP_Apparel_NCR_Engineer_Jumpsuit</li>
+									<li>FCP_Apparel_Legion_Explorer_Hood</li>
+									<li>FCP_Apparel_Legion_Tunic</li>
+									<li>FCP_Apparel_Legion_Vest</li>
+									<li>FCP_Apparel_NCR_Trooper_Fatigues</li>
+									<li>FCP_Apparel_NCR_Ranger_Vest</li>
+									<li>FCP_Apparel_NCR_Ranger_Red_Scarf</li>
+									<li>FCP_Apparel_NCR_Ranger_Casual</li>
+									<li>FCP_Research_NCR_Civilian_Outfitters</li>
+									<li>FCP_Apparel_NCRCF_Inmate_Uniform</li>
+									<li>FCP_Apparel_NCRCF_Over_Shirt</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>	<!-- rare clothes -->
+									<li>FCP_Apparel_NCR_Ambassador_Dress</li>
+									<li>FCP_Apparel_NCR_Ambassador_Suit</li>
+									<li>Apparel_CollarShirt</li>
+									<li>Apparel_Duster</li>
+									<li>Apparel_Jacket</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- medicines-->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_Injector"]/root/options</xpath>
+		<value>
+			<options>
+				<li MayRequire="VanillaExpanded.VBrewE">
+					<weight>0.4</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>VBE_Cigarettes</li>
+								</thingDefs>
+							</filter>
+							<countRange>5~8</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FCPStimpak</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Seti_RadX</li>
+									<li>Seti_RadAway</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Seti_MedX</li>
+									<li>Seti_Jet</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~5</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.2</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Seti_Stimpack</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- computer loot -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_ElectronicProduct"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>0.45</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+									<li>SubcoreBasic</li>
+									<li>SubcoreRegular</li>
+									<li>SubcoreHigh</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- beverages -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_Beverages"]/root/options</xpath>
+		<value> <!-- God I love nuka cola -->
+			<options>
+				<li MayRequire="VanillaExpanded.VBrewE">
+					<weight>1.25</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FO_NukaColaClassic</li>
+									<li>FO_SunsetSarsaparilla</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~5</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li MayRequire="VanillaExpanded.VBrewE">
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FO_NukaColaCandy</li>
+									<li>FO_NukaColaCherry</li>
+									<li>FO_NukaColaClear</li>
+									<li>FO_SunsetSarsaparillaBig</li>
+									<li>FO_Vim</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~5</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li MayRequire="VanillaExpanded.VBrewE">
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FO_NukaColaCranberry</li>
+									<li>FO_NukaColaDark</li>
+									<li>FO_NukaColaGrape</li>
+									<li>FO_NukaColaMix</li>
+									<li>FO_NukaColaOrange</li>
+									<li>FO_NukaColaTwist</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~5</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.75</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FO_NukaColaQuantum</li>
+									<li>FO_NukaColaQuantumCandy</li>
+									<li>FO_NukaColaWild</li>
+									<li>FO_VimCaptainsBlend</li>
+									<li>FO_VimRefresh</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~2</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FO_NukaColaQuartz</li>
+									<li>FO_NukaColaShine</li>
+									<li>FO_NukaColaVaccinated</li>
+									<li>FO_VimQuartz</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- crisps NOT chips -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_PotatoChips"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FCP_Food_Potato_Crisps_Lightly_Salted</li>
+									<li>FCP_Food_Potato_Crisps</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- snacks -->
+		<xpath>Defs/ThingSetMakerDef[defName="AM_Food"]/root/options</xpath>
+		<value>
+			<options>
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>FCP_Food_Blamco_Original_Flavor</li>
+									<li>FCP_Food_Blamco_Extra_Cheezy_Flavor</li>
+									<li>FCP_Food_Cram</li>
+									<li>FCP_Food_Cram_Low_Sodium</li>
+									<li>FCP_Food_Dandy_Boy_Apples</li>
+									<li>FCP_Food_Dandy_Boy_Caramel_Apples</li>
+									<li>FCP_Food_Fancy_Lad_Snack_Cakes</li>
+									<li>FCP_Food_Fancy_Lad_Snack_Cakes_Buzzbite_Flavor</li>
+									<li>FCP_Food_Gum_Drops</li>
+									<li>FCP_Food_Gum_Drops_Anchorage_Arctic_Flavor</li>
+									<li>FCP_Food_Insta_Mash</li>
+									<li>FCP_Food_Insta_Mash_And_Bacon</li>
+									<li>FCP_Food_Pork_N_Beans</li>
+									<li>FCP_Food_Pork_N_Beans_Hot_N_Spicy_Flavor</li>
+									<li>FCP_Food_Salisbury_Steak</li>
+									<li>FCP_Food_BIG_BOY_Salisbury_Steak</li>
+									<li>FCP_Food_Sugar_Bombs</li>
+									<li>FCP_Food_Yum_Yum_Deviled_Eggs</li>
+									<li>FCP_Food_Yum_Yum_Deviled_Eggs_Sour_Cream_Flavor</li>
+								</thingDefs>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- ancient boss weapons -->
+		<xpath>Defs/PawnKindDef[defName="AncientSoldierBoss"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>SpacerGun</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- ancient boss inventory -->
+		<xpath>Defs/PawnKindDef[defName="AncientSoldierBoss"]/fixedInventory</xpath>
+		<value>
+			<fixedInventory>
+				<Seti_Stimpack>1</Seti_Stimpack>
+				<Seti_RadX>3</Seti_RadX>
+				<Seti_RadAway>2</Seti_RadAway>
+			</fixedInventory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- mall guards weapons -->
+		<xpath>Defs/PawnKindDef[defName="AncientMallGuards"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>IndustrialGunAdvanced</li>
+				<li>SpacerGun</li>
+				<li>SmartGunElite</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- mall guards inventory -->
+		<xpath>Defs/PawnKindDef[defName="AncientMallGuards"]/fixedInventory</xpath>
+		<value>
+			<fixedInventory>
+				<Seti_Stimpack>1</Seti_Stimpack>
+				<Seti_RadAway>1</Seti_RadAway>
+			</fixedInventory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- hammer guy inventory -->
+		<xpath>Defs/PawnKindDef[defName="AncientSlaughter"]/fixedInventory</xpath>
+		<value>
+			<fixedInventory>
+				<Seti_Stimpack>1</Seti_Stimpack>
+				<Seti_Buffout>5</Seti_Buffout>
+			</fixedInventory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> <!-- generic scav inventory -->
+		<xpath>/Defs/PawnKindDef[defName="AM_Scavenger"]/fixedInventory</xpath>
+		<value>
+			<fixedInventory>
+				<FCP_Food_Sugar_Bombs>1</FCP_Food_Sugar_Bombs>
+				<FCP_Food_Yum_Yum_Deviled_Eggs>3</FCP_Food_Yum_Yum_Deviled_Eggs>
+			</fixedInventory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove"><xpath>/Defs/ThingDef[defName="AM_PotatoChipsA"]</xpath></Operation>
+</Patch>
