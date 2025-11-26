@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>MSSF_Mech_Blobbytron</defName>
+    <label>blobbytron</label>
+    <description>The finest in robotic engineering, directly from Crinkly Bottom Inc. This stealth assasination unit excels at infiltration and direct action.</description>
+    <statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+      <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+    </statBases>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <labelNoLocation>leg</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>1.25</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <labelNoLocation>leg</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.0</power>
+        <cooldownTime>1.25</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Protectron</body>
+      <baseHealthScale>4</baseHealthScale>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>MSSF_Blobby_Call</soundWounded>
+          <soundDeath>MSSF_Blobby_Call</soundDeath>
+          <soundCall>MSSF_Blobby_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>MSSF_Blobby_Call</soundWounded>
+          <soundDeath>MSSF_Blobby_Call</soundDeath>
+          <soundCall>MSSF_Blobby_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <detritusLeavings>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>11</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>16</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>1</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+      </detritusLeavings>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>MSSF_Mech_Blobbytron</defName>
+    <label>blobbytron</label>
+    <labelPlural>blobbytrons</labelPlural>
+    <race>MSSF_Mech_Blobbytron</race>
+    <combatPower>130</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.RimWorld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Blobbotron/MSSF_Blobbotron</texPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Blobbotron/MSSF_Blobbotron</texPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MSSF_MechanoidGunBlobby</li>
+    </weaponTags>
+	
+    <abilities>
+      <li>SmokepopMech</li>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+ <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>MSSF_Mech_Blobbytron</defName>
+    <label>gestate blobbytron</label>
+    <description>Gestate a blobbytron mechanoid.</description>
+    <products>
+      <MSSF_Mech_Blobbytron>1</MSSF_Mech_Blobbytron>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>MSSF_Mech_Blobbytron</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+</Defs>
