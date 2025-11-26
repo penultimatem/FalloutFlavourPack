@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GarryFlowers_ArchotechResearchData"]/label</xpath>
+		<value>
+			<label>Big MT Experimental Mega-Drive</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GarryFlowers_UltraResearchData"]/label</xpath>
+		<value>
+			<label>RobCo Industries Classified Files</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GarryFlowers_SpacerResearchData"]/label</xpath>
+		<value>
+			<label>General Atomics International Records</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GarryFlowers_IndustrialResearchData"]/label</xpath>
+		<value>
+			<label>Vault-Tec Corporation Holotape</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GarryFlowers_MedievalResearchData"]/label</xpath>
+		<value>
+			<label>Wilson Atomatoys Blueprints</label>
+		</value>
+	</Operation>
+</Patch>

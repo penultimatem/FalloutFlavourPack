@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CarryToRecharger>Carry to robo-recharger</CarryToRecharger>
+  <MustBeCarriedToRecharger>Must be carried to robo-recharger.</MustBeCarriedToRecharger>
+  <CaravanMech>1 robot</CaravanMech>
+  <CaravanMechsCount>{0} robot</CaravanMechsCount>
+
+  <!-- Mechanitor -->
+  
+  <BandwidthGizmoTip>A roboticist can only oversee a robot if there is enough bandwidth to do so. Each robot consumes a different amount of bandwidth.\n\nGain more bandwidth by constructing band nodes and tuning the roboticist to them, or by equipping special roboticist apparel.</BandwidthGizmoTip>
+  <AssignedMechs>Assigned robots</AssignedMechs>
+  <BandNodeTuningDesc>Tune this band node to a roboticist. Tuning will take {0} to complete.</BandNodeTuningDesc>
+  <BandNodeRetuningDesc>Retune this band node to another roboticist. Retuning will take {0} to complete.</BandNodeRetuningDesc>
+  <DropThingBandwidthApparel>Removing {0} will change {1_labelShort}'s bandwidth from {2} to {3}. This will mean the following robots will no longer be under control</DropThingBandwidthApparel>
+  <NoMechs>no robots</NoMechs>
+  <LoadingMechGestator>Loading robot manufacturing resources</LoadingMechGestator>
+  <InitMechGestationCycle>Initiating robot manufacturing cycle</InitMechGestationCycle>
+  <InitMechBirth>Initiating robot release</InitMechBirth>
+  <MechEnergy>Robot energy</MechEnergy>
+  <MechGestationBandwidthUsed>Robot manufacturing bandwidth</MechGestationBandwidthUsed>
+  <MechsDisabled>Robots disabled</MechsDisabled>
+  <Gestating>Manufacturing</Gestating>
+
+  <!-- Mech gestating -->
+  <CurrentGestationCycle>Current manufacturing cycle</CurrentGestationCycle>
+  <RemainingGestationCycles>Manufacturing cycles remaining</RemainingGestationCycles>
+  <GestationCycles>Manufacturing cycles</GestationCycles>
+  <GestatingMech>Manufacturing {0}</GestatingMech>
+  <GestatedMech>Manufactured {0}</GestatedMech>
+  <GestatingMechRequiresMechanitor>Requires {PAWN_nameDef} to continue manufacturing</GestatingMechRequiresMechanitor>
+  <GestationComplete>Manufacturing complete</GestationComplete>
+  <ResurrectingMech>Rebuilding {0}</ResurrectingMech>
+  <ResurrectedMech>Rebuilding {0}</ResurrectedMech>
+
+  <!-- Mech power cell -->
+  <MechPowerCellTip>War urchins have a one-time power source. When the power cell runs out, the robot dies.</MechPowerCellTip>
+
+  <!-- Bossgroup -->
+  <BossgroupAvailableIn>available in {0}.</BossgroupAvailableIn>
+  <RequiresMechanitor>requires roboticist</RequiresMechanitor>
+
+  <!-- Mech resurrection -->
+  <MechResurrectionCharges>Robot rebuilding charges</MechResurrectionCharges>
+
+  <!-- Mechs -->
+  <MechStunPulseWarning>Robot stun pulse on death</MechStunPulseWarning>
+  
+  <!-- Remote mech shield -->
+  <RemoteMechShieldTip>A remote shield projected by a roboticist. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP</RemoteMechShieldTip>
+
+</LanguageData>

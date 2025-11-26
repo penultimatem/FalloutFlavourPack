@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <CommandAutoRepair>Auto-repair</CommandAutoRepair>
+  <CommandAutoRepairDesc>If active, a roboticist will automatically repair this robot. Repairing a robot drains its energy.</CommandAutoRepairDesc>
+
+  <CommandSelectOverseer>Select overseer</CommandSelectOverseer>
+  <CommandSelectOverseerDesc>Select the roboticist who is the overseer of this robot.</CommandSelectOverseerDesc>
+
+  <CommandCallBossgroup>Summon RobCo. threat...</CommandCallBossgroup>
+  <CommandCallBossgroupDesc>Summon an enemy leader robot along with escorts.\n\nIf you defeat the leader robot, it will drop a special chip which you can use to advance your own robotics technology.\n\nThere are three leader robot types, each summoned a different way, each dropping a different type of chip.</CommandCallBossgroupDesc>
+
+  <CommandSelectAllMechs>Select all robots</CommandSelectAllMechs>
+  <CommandSelectAllMechsDesc>Select all robots controlled by this robiticist.</CommandSelectAllMechsDesc>
+
+</LanguageData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Mechanitors -->
+  <AnyMechanitor>Any roboticist</AnyMechanitor>
+  <BossgroupWarningDialog>Summoning the {LEADERKIND_label} threat will summon the following hostile robots:\n\n{PAWNS}\n\nThe robots will arrive in the next few hours or days. Are you ready to fight?</BossgroupWarningDialog>
+  <MechControllerDowned>{PAWN_labelShort} is downed.</MechControllerDowned>
+  <MechControllerImprisoned>{PAWN_labelShort} is a prisoner.</MechControllerImprisoned>
+  <MechControllerInsideContainer>{PAWN_labelShort} is inside {CONTAINER}</MechControllerInsideContainer>
+  <MechControllerInsufficientBandwidth>{PAWN_labelShort} has insufficient bandwidth</MechControllerInsufficientBandwidth>
+  <MechControllerMentalState>{PAWN_labelShort} is in a '{MENTALSTATE_label}' mental state.</MechControllerMentalState>
+  <ConfirmDisassemblingMech>Do you really want to permanently disassemble {0}?\n\nPermanently disassembling {0} will recover</ConfirmDisassemblingMech>
+  <ConfirmInstallMechlink_Smithing>A roboticist must be capable of smithing to create robots.\n\nAre you sure you want to continue?</ConfirmInstallMechlink_Smithing>
+  <ConfirmInstallMechlink_Intellectual>A roboticist must be capable of intellectual tasks to unlock roboticist research.\n\nAre you sure you want to continue?</ConfirmInstallMechlink_Intellectual>
+  <InsufficientBandwidth>insufficient bandwidth</InsufficientBandwidth>
+  <MechanitorLeftMapWithoutMechs>The following robots have been left behind by {PAWN_labelShort}:\n\n{MECHS}\n\nThe robots will stay here until they are picked up.\n\nWould you like to set their work mode to escort so they follow {PAWN_labelShort} off the map?</MechanitorLeftMapWithoutMechs>
+
+  <!-- Apparel -->
+  <ApparelRequirementAnyMechlordApparel>Any roboticist apparel</ApparelRequirementAnyMechlordApparel>
+  <ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>or any psycaster, prestige, or roboticist apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>
+
+  <!-- Mech gestator -->
+  <GestationCyclesCompleted>Manufacturing cycles completed</GestationCyclesCompleted>
+
+  <!-- Mechs -->
+  <MechWeightClass>Weight class</MechWeightClass>
+  <MechWeightClassExplanation>The weight class of this robot.</MechWeightClassExplanation>
+  <MechOverseer>This robot's overseer is {0}.</MechOverseer>
+  <MechWorkActivities>Work activities</MechWorkActivities>
+  <MechWorkActivitiesExplanation>The work activities that can be performed by this robot.\n\nThe following list details which work activities can be done within each work type</MechWorkActivitiesExplanation>
+  <MechRechargeSettingsTitle>Recharge settings</MechRechargeSettingsTitle>
+  <MechRechargeSettingsExplanation>Change when robots will start and stop charging.\n\nRobots with energy below this range will automatically seek out a recharger. They will stop charging once they reach the top of this range. These settings only apply in work mode.</MechRechargeSettingsExplanation>
+  <MechWorkSkillDesc>The skill level that this robot acts with.</MechWorkSkillDesc>
+  <AnyMech>Any robot</AnyMech>
+  <CaravanLacksMechMechanitorWarning>Your caravan contains a robot but not their overseer. You will have limited control over the robot when you reach your destination.</CaravanLacksMechMechanitorWarning>
+  <MechsSection>Robots</MechsSection>
+
+  <!-- Pawn naming -->
+  <RenameMech>Rename mech</RenameMech>
+  <MechGainsName>The mech's name is now {0}.</MechGainsName>
+
+  <ChooseMechAccentColor>Choose mech accent color</ChooseMechAccentColor>
+
+  <!-- Abandon home (including mechs) -->
+  <ConfirmAbandonHomeWithColonyPawnsIncMechs>Some of your colonists, animals or robots are in this area. Are you sure you want to abandon it?\n\nThe following people, animals and robots will be left behind:\n\n{0}</ConfirmAbandonHomeWithColonyPawnsIncMechs>
+
+</LanguageData>

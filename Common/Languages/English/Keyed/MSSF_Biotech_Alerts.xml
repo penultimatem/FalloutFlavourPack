@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <AlertMechLacksOverseer>Uncontrolled robots</AlertMechLacksOverseer>
+  <AlertMechLacksOverseerDesc>One or more of your robots are not controlled. Connect your robots to a roboticist with sufficient bandwidth to control them.\n\nIf left uncontrolled for more than a day, a robot could go feral. When this happens they will join {0} and become hostile to you. If one robot goes feral, it will bring other nearby robots with it.\n\nFeral robots cannot be resurrected at a gestator when killed.</AlertMechLacksOverseerDesc>
+  <AlertMechLacksOverseerUncontrolled>The following robots are uncontrolled</AlertMechLacksOverseerUncontrolled>
+  <AlertMechLacksOverseerMayGoFeral>The following robots are uncontrolled and could go feral at any moment</AlertMechLacksOverseerMayGoFeral>
+  <AlertRechargerFullDesc>Some robo-recharger(s) are storing their maximum number of toxic wastepacks. Robots can't use these chargers until the toxic wastepacks are hauled away.\n\nSelect a colonist and right-click a recharger to unload it.</AlertRechargerFullDesc>
+
+  <AlertNeedMechChargers>Need robo-rechargers</AlertNeedMechChargers>
+  <AlertNeedMechChargersDesc>You don't have robo-rechargers for all your robots. If a robot runs out of energy, it will fall into a dormant self-charging state and will recharge very slowly.\n\nBuild more of the following robot-chargers:\n{0}\n\nNote: Only light robots can use regular robo-rechargers. Medium or heavier robots require large robo-rechargers.</AlertNeedMechChargersDesc>
+  <AlertNeedMechChargerBasicMechtech>Research basic robotech or higher to build robo-rechargers.</AlertNeedMechChargerBasicMechtech>
+
+  <AlertMechMissingBodyPart>Robot missing part</AlertMechMissingBodyPart>
+  <AlertMechsMissingBodyPart>Robots missing parts</AlertMechsMissingBodyPart>
+  <AlertMechMissingBodyPartDesc>One or more of your robots are missing a body part. A roboticist can repair lost parts.\n\nThe robots with lost body parts are</AlertMechMissingBodyPartDesc>
+
+  <AlertMechNeedsRepair>Robot repair needed</AlertMechNeedsRepair>
+  <AlertMechNeedsRepairDescPrefix>These robots are damaged and need repair</AlertMechNeedsRepairDescPrefix>
+  <AlertMechNeedsRepairDesc>Order a roboticist to repair them, or select the robot and turn on auto-repair. Repairing a robot requires energy. If a robots's energy is so low it can't move, someone must carry it to a recharger.</AlertMechNeedsRepairDesc>
+
+  <AlertBossgroupIncoming>{0} incoming</AlertBossgroupIncoming>
+  <AlertBossgroupIncomingDesc>Signaled by your roboticist, a hostile {0} is approaching with its combat escort. Be prepared, this won't be an easy fight. The hostile robots will arrive in a few hours or days.</AlertBossgroupIncomingDesc>
+
+</LanguageData>

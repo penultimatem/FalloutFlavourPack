@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BasicRecharger"]/label</xpath>
+		<value>
+			<label>Robo-Recharger</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BasicRecharger"]/description</xpath>
+		<value>
+			<description>Lightweight robots can recharge here. During recharge, this robo-Recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="StandardRecharger"]/label</xpath>
+		<value>
+			<label>Mega Robo-Recharger</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="StandardRecharger"]/description</xpath>
+		<value>
+			<description>Medium, heavy, and ultraheavy robots can recharge here. During recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BandNode"]/description</xpath>
+		<value>
+			<description>A robot-band signal amplifier. Band nodes must be tuned to a specific roboticist. This will add 1 bandwidth to that roboticist's total bandwidth, allowing them to control more robots.\n\nOnce a band node is constructed, it can be quickly tuned to a roboticist. However, retuning a band node to a different roboticist takes significantly longer.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BurnoutMechlinkBooster"]/label</xpath>
+		<value>
+			<label>RoboCo. Wideband Antenna</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BurnoutMechlinkBooster"]/description</xpath>
+		<value>
+			<description>A robot-band signaling device. When activated, it puts out a powerful robot signal pulse, which will attract an ultra-heavy feral robot to attack with its escorts. If you can defeat it, you can collect special technologies from its corpse. The signal pulse burns out the transmitter, so this building can only be used once.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MechbandDish"]/label</xpath>
+		<value>
+			<label>RoboCo. Satelite Comms Unit</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MechbandDish"]/description</xpath>
+		<value>
+			<description>A robot-band signaling device more powerful than the normal RoboCo. wideband antenn. When activated, it puts out an ultra-powerful robot signal pulse, which will attract a robot commander to attack with its escorts. If you can defeat it, you can collect special technologies from its corpse. The signal pulse burns out the dish, so this building can only be used once.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="MechBoost"]/label</xpath>
+		<value>
+			<label>RobCo. Robot Motivator</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="MechBoost"]/description</xpath>
+		<value>
+			<description>This robot's capacities have been boosted by a nearby RobCo. robot motivator.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MechBoost"]/label</xpath>
+		<value>
+			<label>RobCo. Robot Motivator</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MechBoost"]/description</xpath>
+		<value>
+			<description>A remote energy and computation enhancement device. Any friendly robots in its effect radius will move and work faster.</description>
+		</value>
+	</Operation>
+
+</Patch>

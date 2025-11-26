@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ScenPart_StartingMech>Start with robot</ScenPart_StartingMech>
+  <Mechanoid>Robot</Mechanoid>
+  <RandomMech>random robot</RandomMech>
+  <StartOverseenChance>Overseen chance</StartOverseenChance>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+  <StatsReport_RechargerWeightClass>Required weight class</StatsReport_RechargerWeightClass>
+  <StatsReport_RechargerWeightClass_Desc>The weight class of robot which can use this robo-recharger. The following robots are compatible</StatsReport_RechargerWeightClass_Desc>
+
+  <StatsReport_RechargerNeeded>Robo-recharger needed</StatsReport_RechargerNeeded>
+  <StatsReport_RechargerNeeded_Desc>The type of robo-recharger that this robot can use to recover energy. This is based on the robots's weight class.</StatsReport_RechargerNeeded_Desc>
+
+</LanguageData>
