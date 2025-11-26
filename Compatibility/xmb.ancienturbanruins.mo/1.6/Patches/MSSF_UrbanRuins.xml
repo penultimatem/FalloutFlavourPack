@@ -136,6 +136,7 @@
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_AssaultRifle_Unique</li>
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_SniperRifle_Unique</li>
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_Minigun_Unique</li>
+									<li MayRequire="sarg.alphaarmoury">AArmoury_Gun_Launcher_Unique</li>
 									<li>Gun_hssn_AlienBlaster</li>
 									<li>Gun_hssn_Wattz1000MagnetoLaser</li>
 									<li>Gun_hssn_SolarScorcher</li>
