@@ -8,5 +8,6 @@
         <li IfModActive="rh2.faction.rangers">Compatibility/rh2.faction.rangers/1.6</li>
         <li IfModActive="ludeon.rimworld.anomaly">Compatibility/ludeon.rimworld.anomaly/1.6</li>
         <li IfModActive="xmb.ancienturbanruins.mo">Compatibility/xmb.ancienturbanruins.mo/1.6</li>
+        <li IfModActive="fip.robco">Compatibility/fip.robco/1.6/</li>
     </v1.6>
 </loadFolders>

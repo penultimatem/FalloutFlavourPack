@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Patch> <!-- This file is a dirty copy/paste from the "Vanilla plus loot expirence for ancient urban ruins" which it rethemes for a solely fallout experience, however not every patch has been overwritten based on sensibility -->
+<Patch> <!-- Used with "Vanilla plus loot expirence for ancient urban ruins". This rethemes for a specfically fallout experience, however not every patch has been overwritten based on sensibility -->
 	<Operation Class="PatchOperationReplace"> <!-- Weapon boxes -->
 		<xpath>Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]/root/options</xpath>
 		<value>
@@ -136,6 +136,7 @@
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_AssaultRifle_Unique</li>
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_SniperRifle_Unique</li>
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Gun_Minigun_Unique</li>
+									<li MayRequire="sarg.alphaarmoury">AArmoury_Gun_Launcher_Unique</li>
 									<li>Gun_hssn_AlienBlaster</li>
 									<li>Gun_hssn_Wattz1000MagnetoLaser</li>
 									<li>Gun_hssn_SolarScorcher</li>
