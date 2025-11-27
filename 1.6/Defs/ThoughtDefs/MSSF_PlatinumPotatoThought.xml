@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>MSSF_AtePlatinumPotato</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate platinum potato</label>
+        <description>That platinum potato was absolutely divine! I feel like I could take on the whole wasteland!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
+
