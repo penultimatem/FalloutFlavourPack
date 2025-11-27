@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef Name="SweetPotatoPlant" ParentName="PlantBase">
+    <defName>Plant_SweetPotato</defName>
+    <label>sweet potato plant</label>
+    <description>A highly nutritious tuber. Sweet potatoes grow well even in somewhat poor soil, and form a delicious crispy outer coating when fried in oil.</description>
+    <statBases>
+      <MaxHitPoints>89</MaxHitPoints>
+      <Nutrition>0.26</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/PotatoPlant/SweetPotatoPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <plant>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawSweetPotatoes</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.5</growDays>
+      <visualSizeRange>0.5~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+</Defs>

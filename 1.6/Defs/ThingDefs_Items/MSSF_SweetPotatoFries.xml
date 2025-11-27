@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="MealFineBase">
+    <defName>MSSF_SweetPotatoFries</defName>
+    <label>sweet potato fries</label>
+    <description>Delicious crispy sweet potato fries. A simple but satisfying meal that requires a lot of sweet potatoes to make.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/sweet-Potatoes-fries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>MSSF_PlatinumPotato</defName>
+    <label>platinum potato</label>
+    <description>A rare and exquisite potato with a lustrous golden-platinum sheen. Those who consume it report an overwhelming sense of satisfaction and contentment that lasts throughout the day. A true delicacy of the wasteland.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Potatoes_platinum</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <joy>0.15</joy>
+      <joyKind>Gluttonous</joyKind>
+      <tasteThought>MSSF_AtePlatinumPotato</tasteThought>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

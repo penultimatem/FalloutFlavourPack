@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RecipeDef ParentName="CookMealFineBase">
+    <defName>CookMSSF_SweetPotatoFries</defName>
+    <label>cook sweet potato fries</label>
+    <description>Cook delicious crispy sweet potato fries from a large amount of sweet potatoes.</description>
+    <jobString>Cooking sweet potato fries.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawSweetPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>0.75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawSweetPotatoes</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MSSF_SweetPotatoFries>1</MSSF_SweetPotatoFries>
+    </products>
+    <displayPriority>205</displayPriority>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>
