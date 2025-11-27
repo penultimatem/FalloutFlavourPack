@@ -33,5 +33,6 @@
         <li>ludeon.rimworld.biotech</li>
         <li>rh2.faction.rangers</li>
         <li>bb.generic.loot.exp.anc.urban.ruins</li>
+        <li>mo.technicalmapvehicles</li>
     </loadAfter>
 </ModMetaData>
