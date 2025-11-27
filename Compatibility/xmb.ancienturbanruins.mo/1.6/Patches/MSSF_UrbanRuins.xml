@@ -775,6 +775,19 @@
 						</fixedParams>
 					</thingSetMaker>
 				</li>
+				<li>
+					<weight>0.01</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>MSSF_PlatinumPotato</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
 			</options>
 		</value>
 	</Operation>
