@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- MechGestator -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="MechGestator"]/recipes</xpath>
+		<value>
+			<li>MSSF_Mech_Blobbytron</li>
+		</value>
+	</Operation>
+</Patch>

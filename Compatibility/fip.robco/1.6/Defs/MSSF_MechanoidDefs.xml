@@ -3,34 +3,13 @@
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>MSSF_Mech_Blobbytron</defName>
     <label>blobbytron</label>
-    <description>The finest in robotic engineering, directly from Crinkly Bottom Inc. This stealth assasination unit excels at infiltration and direct action.</description>
+    <description>The finest in robotic engineering, directly from Crinkly Bottom Inc. This stealth
+      assasination unit excels at infiltration and direct action.</description>
     <statBases>
       <MoveSpeed>4.5</MoveSpeed>
       <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
     </statBases>
     <tools>
-      <li>
-        <label>front left leg</label>
-        <labelNoLocation>leg</labelNoLocation>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>14.0</power>
-        <cooldownTime>1.25</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>front right leg</label>
-        <labelNoLocation>leg</labelNoLocation>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>14.0</power>
-        <cooldownTime>1.25</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
       <li>
         <label>head</label>
         <capacities>
@@ -89,7 +68,7 @@
     <race>MSSF_Mech_Blobbytron</race>
     <combatPower>130</combatPower>
     <lifeStages>
-      <li MayRequire="Ludeon.RimWorld.Biotech"> 
+      <li MayRequire="Ludeon.RimWorld.Biotech">
         <bodyGraphicData>
           <texPath>Things/Blobbotron/MSSF_Blobbotron</texPath>
           <shaderType>CutoutWithOverlay</shaderType>
@@ -100,7 +79,7 @@
           </shadowData>
         </bodyGraphicData>
       </li>
-      <li> 
+      <li>
         <bodyGraphicData>
           <texPath>Things/Blobbotron/MSSF_Blobbotron</texPath>
           <shaderType>CutoutWithOverlay</shaderType>
@@ -116,7 +95,7 @@
     <weaponTags>
       <li>MSSF_MechanoidGunBlobby</li>
     </weaponTags>
-	
+
     <abilities>
       <li>SmokepopMech</li>
     </abilities>
@@ -124,15 +103,35 @@
     <techHediffsMoney>9999~9999</techHediffsMoney>
   </PawnKindDef>
 
- <RecipeDef ParentName="LightMechanoidRecipe">
+  <RecipeDef ParentName="LightMechanoidRecipe">
     <defName>MSSF_Mech_Blobbytron</defName>
     <label>gestate blobbytron</label>
     <description>Gestate a blobbytron mechanoid.</description>
+    <jobString>Blobbyfying a blobbytron.</jobString>
+    <displayPriority>75</displayPriority>
     <products>
       <MSSF_Mech_Blobbytron>1</MSSF_Mech_Blobbytron>
     </products>
     <descriptionHyperlinks>
       <ThingDef>MSSF_Mech_Blobbytron</ThingDef>
     </descriptionHyperlinks>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
   </RecipeDef>
 </Defs>
