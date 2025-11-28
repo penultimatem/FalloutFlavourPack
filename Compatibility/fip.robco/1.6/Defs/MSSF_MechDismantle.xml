@@ -37,12 +37,9 @@
     <description>Dismantle the Hydra to gather its valuable components.</description>
     <ingredients>
       <li>
-        <filter>
-          <categories>
-            <li>Corpses</li>
-          </categories>
-        </filter>
-        <count>1</count>
+        <thingDefs>
+          <li>Corpse_Mech_Diabolus</li>
+        </thingDefs>
       </li>
     </ingredients>
     <fixedIngredientFilter>

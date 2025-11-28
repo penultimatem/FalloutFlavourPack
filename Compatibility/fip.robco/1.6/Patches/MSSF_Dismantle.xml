@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="SignalChip"]</xpath>
+		<value>
+			<recipeMaker>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+			</recipeMaker>
+			<costList>
+				<Corpse_Mech_Diabolus>1</Corpse_Mech_Diabolus>
+			</costList>
+		</value>
+	</Operation>
+</Patch>
