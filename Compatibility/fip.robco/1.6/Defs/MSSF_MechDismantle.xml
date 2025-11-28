@@ -6,23 +6,20 @@
     <label>Salvage Vertibot</label>
     <description>Dismantle the Vertibot to gather its valuable components.</description>
     <ingredients>
-      <li>
+		  <li>
         <filter>
-          <categories>
-            <li>Corpses</li>
-          </categories>
+          <thingDefs>
+            <li>Corpse_Mech_Termite</li>
+          </thingDefs>
         </filter>
         <count>1</count>
-      </li>
-    </ingredients>
+		  </li>
+		</ingredients>
     <fixedIngredientFilter>
       <thingDefs>
          <li>Corpse_Mech_Termite</li>
       </thingDefs>
     </fixedIngredientFilter>
-    <products>
-      <Kibble>1</Kibble>
-    </products>
     <recipeUsers>
       <li>TableMachining</li>
     </recipeUsers>
@@ -36,15 +33,18 @@
     <label>Salvage Hydra</label>
     <description>Dismantle the Hydra to gather its valuable components.</description>
     <ingredients>
-      <li>
-        <thingDefs>
-          <li>Corpse_Mech_Diabolus</li>
-        </thingDefs>
-      </li>
-    </ingredients>
+		  <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Mech_Diabolus</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+		  </li>
+		</ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Corpse_Mech_Diabolus</li>
+         <li>Corpse_Mech_Diabolus</li>
       </thingDefs>
     </fixedIngredientFilter>
     <recipeUsers>

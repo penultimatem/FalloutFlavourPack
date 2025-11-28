@@ -18,5 +18,135 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/Call</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>20~28</volumeRange>
+        <pitchRange>0.9770588~1.137647</pitchRange>
+        <distRange>0~50.40025</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Wounded</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/Pain</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9311764~1.068824</pitchRange>
+        <distRange>0~70</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/Death</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>30~35</volumeRange>
+        <pitchRange>0.9311764~1.068824</pitchRange>
+        <distRange>0~70</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Revealed</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/Revealed</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9311764~1.068824</pitchRange>
+        <distRange>0~70</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Stealth</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/Stealth</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9311764~1.068824</pitchRange>
+        <distRange>0~70</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_Hypnotize</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MSSF_MrBlobby/Revenant_Hypnotize_Loop_A_01</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30</volumeRange>
+        <sustainAttack>2.5</sustainAttack>
+        <sustainRelease>2.5</sustainRelease>
+        <distRange>20~100</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MSSF_Pawn_MrBlobby_StartledScream</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>MSSF_MrBlobby/StartledScream</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25~30</volumeRange>
+        <pitchRange>0.9311764~1.068824</pitchRange>
+        <distRange>0~70</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
     
 </Defs>

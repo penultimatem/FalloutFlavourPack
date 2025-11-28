@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/InteractionDef[defName="BuildRapport"]/logRulesInitiator/rulesStrings</xpath>
+        <value>
+            <li>subject->their cat, jess</li>
+            <li>subject->the platinum chip</li>
+            <li>subject->a cool red van</li>
+            <li>subject->the intricacies of delivering mail on time</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RulePackDef[defName="GlobalUtility"]/rulePack/rulesStrings</xpath>
+        <value>
+            <li>ConceptPositive->the platinum chip</li>
+            <li>ConceptPositive->a cool red van</li>
+            <li>ConceptPositive->the intricacies of delivering mail on time</li>
+            <li>ConceptAngsty->the platinum chip</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RulePackDef[defName="TalkTopicsUtility"]/rulePack/rulesStrings</xpath>
+        <value>
+            <li>TalkTopicAny->the platinum chip</li>
+        </value>
+    </Operation>
+</Patch>
