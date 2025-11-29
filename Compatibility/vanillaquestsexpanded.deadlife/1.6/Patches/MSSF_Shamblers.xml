@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>The Brotherhood Compendium 1.6</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnKindDef[defName="VQE_MilitaryShambler"]/apparelRequired</xpath>
+			<value>
+				<li>DRKApparelEncUniform</li>
+				<li>DRKApparelEncOfDuster</li>
+				<li>Apparel_Pants</li>
+			</value>
+        </match>
+    </Operation>
+</Patch>
