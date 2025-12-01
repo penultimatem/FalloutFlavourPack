@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MechanitorHeadsetBase">
+    <defName>MSSF_MechHat1</defName>
+    <label>Postboy Hat</label>
+    <description>A combined uniform hat and head-mounted comms computer which slightly enhances a robiticist's control bandwidth. This allows them to control more robots.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/T1_PostboyHat/PostboyHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Apparel_AuthorityCap>1</Apparel_AuthorityCap>
+      <Apparel_AirwireHeadset>1</Apparel_AirwireHeadset>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>HighMechtech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.18</Mass>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MechBandwidth>4</MechBandwidth>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/T1_PostboyHat/PostboyHat</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <scoreOffset>4</scoreOffset>
+      <mechanitorApparel>true</mechanitorApparel>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="MechanitorHeadsetBase">
+    <defName>MSSF_MechHat2</defName>
+    <label>Postboy Helm</label>
+    <description>A combined uniform hat, comms computer, and head-mounted intelligent signaling array that enhances a roboticists's control bandwidth. This allows them to control more robots.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/T2_PostboyController/PostboyController</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Apparel_ArrayHeadset>1</Apparel_ArrayHeadset>
+      <MSSF_MechHat1>1</MSSF_MechHat1>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>HighMechtech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>0.35</Mass>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MechBandwidth>8</MechBandwidth>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/T2_PostboyController/PostboyController</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <scoreOffset>4</scoreOffset>
+      <mechanitorApparel>true</mechanitorApparel>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetMechanitorBase">
+    <defName>MSSF_MechHat3</defName>
+    <label>Postmaster General Helmet</label>
+    <description>An combined uniform hat, comms computer, intelligent signaling array, and finally, a advanced head-mounted computer and signaling array that dramatically enhances a roboticists's control bandwidth. This allows the wearer to control many more robots at once.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/T3_PostmasterHelmet/PostmasterHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <equippedStatOffsets>
+      <MechBandwidth>16</MechBandwidth>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0</VacuumResistance>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <MaxHitPoints>425</MaxHitPoints>
+      <Mass>0.70</Mass>
+      <EquipDelay>2</EquipDelay>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.3</ArmorRating_Heat>
+      <Insulation_Cold>0.15</Insulation_Cold>
+      <Insulation_Heat>0.15</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>HighMechtech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>75</Plasteel>
+      <PowerfocusChip>1</PowerfocusChip>
+      <MSSF_MechHat2>1</MSSF_MechHat2>
+      <Apparel_IntegratorHeadset>1</Apparel_IntegratorHeadset>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/T3_PostmasterHelmet/PostmasterHelmet</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+</Defs>

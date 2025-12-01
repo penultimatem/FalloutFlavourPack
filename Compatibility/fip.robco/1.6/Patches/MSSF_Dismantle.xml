@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="SignalChip"]</xpath>
+		<xpath>/Defs/ThingDef[defName="Mech_Apocriton"]</xpath> <!-- Deathbot -->
 		<value>
-			<recipeMaker>
-            <recipeUsers>
-                <li>TableMachining</li>
-            </recipeUsers>
-            <skillRequirements>
-                <Crafting>6</Crafting>
-            </skillRequirements>
-            <researchPrerequisite>StandardMechtech</researchPrerequisite>
-			</recipeMaker>
-			<costList>
-				<Corpse_Mech_Diabolus>1</Corpse_Mech_Diabolus>
-			</costList>
+			<comps>
+			</comps>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Mech_Apocriton"]/comps</xpath> <!-- Deathbot -->
+		<value>
+			<li Class="VEF.AnimalBehaviours.CompProperties_DropOnDeath">
+				<resourceDef>NanostructuringChip</resourceDef>
+				<resourceAmount>1</resourceAmount>
+				<dropChance>1</dropChance>			
+			</li>
+		</value>
+	</Operation>
+	<!-- <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Mech_Warqueen"]</xpath>
+		<value>
+			<comps>
+			</comps>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Mech_Warqueen"]/comps</xpath>
+		<value>
+			<li Class="VEF.AnimalBehaviours.CompProperties_DropOnDeath">
+				<resourceDef>PowerfocusChip</resourceDef>
+				<resourceAmount>1</resourceAmount>
+				<dropChance>1</dropChance>			
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Mech_Diabolus"]</xpath>
+		<value>
+			<comps>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Mech_Diabolus"]/comps</xpath>
+		<value>
+			<li Class="VEF.AnimalBehaviours.CompProperties_DropOnDeath">
+				<resourceDef>SignalChip</resourceDef>
+				<resourceAmount>1</resourceAmount>
+				<dropChance>1</dropChance>			
+			</li>
+		</value>
+	</Operation> -->
 </Patch>
