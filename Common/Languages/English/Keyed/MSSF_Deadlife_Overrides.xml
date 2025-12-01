@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<VQED_GeneralAwakensText>The sealed sarcophagus hisses open, releasing a cloud of deadlife dust, and from within rises {PAWN_title} {PAWN_nameFull}.
+
+Once the commander of the Enclave's Operation: Deadlife, {PAWN_nameFull} is now a ghoul remnant of a forgotten war. As {PAWN_pronoun} awakens, {PAWN_pronoun} begin reactivating the base’s long-dormant defense systems: rotstink vents, turret grids, shambler kennels, and containment pits filled with the dead.
+
+{PAWN_possessive} ultimate goal is clear: to initiate the launch sequence for the Deadlife ICBMs: orbital warheads designed to blanket the planet in death. If launched, feral ghouls hordes will rise across the world, destroying settlements and ambushing caravans.
+
+You must reach the command center and destroy the ICBM Launch Terminal before {PAWN_nameFull} completes {PAWN_possessive} grim task.</VQED_GeneralAwakensText>
+	<VQED_FactionBaseOverrun>{0} has been overrun by a horde of feral ghouls.</VQED_FactionBaseOverrun>
+	<VQED_ShamblersDefeated>The feral ghoul horde has been defeated.</VQED_ShamblersDefeated>
+	<VQED_GeneralReactivatedDeadlifeVents>To protect the launch site, General {0} reactivated the deadlife vents in an attempt to respawn any defeated feral ghouls.</VQED_GeneralReactivatedDeadlifeVents>
+</LanguageData>

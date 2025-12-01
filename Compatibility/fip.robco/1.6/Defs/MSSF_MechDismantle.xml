@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MSSF_Dismantletier0</defName>
+    <label>Salvage Vertibot</label>
+    <description>Dismantle the Vertibot to gather its valuable components.</description>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Mech_Termite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <products>
+      <BrokenEyebotFrame>1</BrokenEyebotFrame>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MSSF_Dismantletier1</defName>
+    <label>Salvage Hydra</label>
+    <description>Dismantle the Hydra to gather its valuable components.</description>
+    <ingredients>
+		  <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Mech_Diabolus</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+		  </li>
+		</ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+         <li>Corpse_Mech_Diabolus</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <products>
+      <SignalChip>1</SignalChip>
+    </products>
+    <displayPriority>500</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MSSF_Dismantletier2</defName>
+    <label>Salvage Assaultron</label>
+    <description>Dismantle the Assaultron to gather its valuable components.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Mech_Warqueen</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <products>
+      <PowerfocusChip>1</PowerfocusChip>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MSSF_Dismantletier3</defName>
+    <label>Salvage Sentrybot</label>
+    <description>Dismantle the Sentrybot to gather its valuable components.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+         <li>Corpse_Mech_Apocriton</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <products>
+      <NanostructuringChip>1</NanostructuringChip>
+    </products>
+  </RecipeDef>
+
+</Defs>
