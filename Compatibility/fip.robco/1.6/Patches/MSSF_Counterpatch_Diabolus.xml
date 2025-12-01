@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Possible overkill - FIP replaces the entire def, so instead, we restore the original with the FIP changes integrated -->
+	<!-- Mech_Diabolus ThingDef -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Mech_Diabolus"]</xpath>
+		<value>
+			<ThingDef ParentName="Floating">
+				<defName>Mech_Diabolus</defName>
+				<label>Hydra</label>
+				<description>This is the Hydra, a dangerous foe of many wasteland legends.</description>
+				<statBases>
+					<MoveSpeed>5</MoveSpeed>
+					<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+					<EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
+					<MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+					<EMPResistance>0.7</EMPResistance>
+				</statBases>
+				<race>
+					<body>Handy</body>
+					<lifeStageAges>
+						<li>
+							<def>MechanoidFullyFormed</def>
+							<minAge>0</minAge>
+							<soundWounded>Gutsy_Wounded</soundWounded>
+							<soundDeath>Gutsy_Death</soundDeath>
+							<soundCall>Gutsy_Call</soundCall>
+							<soundAngry>Gutsy_Angry</soundAngry>
+						</li>
+					</lifeStageAges>
+					<baseHealthScale>3</baseHealthScale>
+				</race>
+				<comps>
+					<li Class="CompProperties_MechCarrier">
+						<spawnPawnKind>Mech_WarUrchin</spawnPawnKind>
+						<fixedIngredient>Steel</fixedIngredient>
+						<costPerPawn>25</costPerPawn>
+						<startingIngredientCount>600</startingIngredientCount>
+						<maxIngredientCount>600</maxIngredientCount>
+						<spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+						<spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+						<attachSpawnedEffecter>true</attachSpawnedEffecter>
+						<attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+					</li>
+				</comps>
+				<killedLeavingsPlayerHostile>
+					<SignalChip>1</SignalChip>
+				</killedLeavingsPlayerHostile>
+			</ThingDef>
+		</value>
+	</Operation>
+	<!-- Mech_Diabolus PawnKindDef -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PawnKindDef[defName="Mech_Diabolus"]</xpath>
+		<value>
+			<PawnKindDef ParentName="LightMechanoidKind">
+				<defName>Mech_Diabolus</defName>
+				<label>Hydra</label>
+				<race>Mech_Diabolus</race>
+				<combatPower>400</combatPower>
+				<isBoss>true</isBoss>
+				<allowInMechClusters>false</allowInMechClusters>
+				<lifeStages>
+					<li>
+						<bodyGraphicData>
+							<texPath>RobCo/MisterGutsyBoss/MisterGutsyBoss</texPath>
+							<shaderType>CutoutWithOverlay</shaderType>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>1.5</drawSize>
+							<shadowData>
+								<volume>(0.3, 0.4, 0.3)</volume>
+								<offset>(0,0,-0.25)</offset>
+							</shadowData>
+						</bodyGraphicData>
+					</li>
+				</lifeStages>
+				<weaponMoney>9999~9999</weaponMoney>
+				<weaponTags>
+					<li>MechanoidGunShortRange</li>
+				</weaponTags>
+				<techHediffsChance>1</techHediffsChance>
+				<techHediffsMoney>9999~9999</techHediffsMoney>
+				<skipResistant>true</skipResistant>
+			</PawnKindDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/RecipeDef[defName="Diabolus"]</xpath>
+	</Operation>
+</Patch>
