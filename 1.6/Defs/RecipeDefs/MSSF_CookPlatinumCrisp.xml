@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RecipeDef ParentName="CookMealFineBase">
+    <defName>CookMSSF_PlatinumCrisp</defName>
+    <label>Create platinum chip</label>
+    <description>Cook a platinum potato into the Platinum Chip.</description>
+    <jobString>Cooking Platinum Chip.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSSF_PlatinumPotato</li>
+          </thingDefs>
+        </filter>
+        <count>0.2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSSF_PlatinumPotato</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MSSF_PlatinumCrisp>1</MSSF_PlatinumCrisp>
+    </products>
+    <displayPriority>204</displayPriority>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

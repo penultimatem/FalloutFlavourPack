@@ -167,4 +167,40 @@
             <li>ExoticMisc</li>
         </tradeTags>
     </ThingDef>
+	
+	<ThingDef ParentName="MealFineBase">
+        <defName>MSSF_PlatinumCrisp</defName>
+        <label>Platinum Crisp</label>
+        <description>The fried slice of a platinum potato. You're not entirely sure what happened to the rest of the potato. It smells delicious and slightly metallic.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>1</MaxHitPoints>
+            <Mass>0.001</Mass>
+            <Flammability>0.25</Flammability>
+			<Nutrition>0.2</Nutrition>
+        </statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<joy>0.15</joy>
+			<joyKind>Gluttonous</joyKind>
+			<tasteThought>MSSF_AtePlatinumPotato</tasteThought>
+		</ingestible>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
 </Defs>
