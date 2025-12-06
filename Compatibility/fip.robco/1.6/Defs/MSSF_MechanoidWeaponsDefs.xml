@@ -37,8 +37,8 @@
       </li>
     </verbs>
   </ThingDef>
-
   
+
   <ThingDef ParentName="BaseBullet">
     <defName>MSSF_Bullet_Blobby</defName>
     <label>blobby blast</label>
@@ -57,8 +57,8 @@
       <filthCount>1</filthCount>
     </projectile>
   </ThingDef>
-
   
+
   <DamageDef Name="Bullet">
     <defName>MSSF_Bullet_Blobby</defName>
     <label>blobby blast</label>
@@ -73,8 +73,8 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
   </DamageDef>
-
   
+
   <HediffDef ParentName="InjuryBase">
     <defName>MSSF_Blob</defName>
     <label>blobbed</label>
@@ -104,29 +104,43 @@
     </injuryProps>
   </HediffDef>
   
-  <ThingDef ParentName="Filth_BloodInsect">
-    <defName>Filth_BlobbyGun</defName>
-    <label>blobber discharge</label>
-    <graphicData>
-      <texPath>Things/Filth/Spatter</texPath>
-      <color>(248, 191, 242, 180)</color>
-    </graphicData>
+
+  <ThingDef ParentName="BaseFilth">
+		<defName>Filth_BlobbyGun</defName>
+		<label>blobber discharge</label>
+		<statBases>
+		  <Beauty>-40</Beauty>
+		  <Cleanliness>-15</Cleanliness>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Filth/Spatter</texPath>
+		  <color>(248, 191, 242, 180)</color>
+		</graphicData>
+		<filth>
+		  <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+		  <disappearsInDays>35~40</disappearsInDays>
+		  <rainWashes>true</rainWashes>
+		  <cleaningWorkToReduceThickness>80</cleaningWorkToReduceThickness>
+		  <canFilthAttach>true</canFilthAttach>
+		  <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
   </ThingDef>
-  
+
+
   <SoundDef>
     <defName>MSSF_Blobber_Fire</defName>
     <context>MapOnly</context>
     <subSounds>
       <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>MSSF_BlobbyGun/Fire</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>30~35</volumeRange>
-        <pitchRange>0.9311764~1.068824</pitchRange>
-        <distRange>0~70</distRange>
-        <sustainLoop>False</sustainLoop>
+      <grains>
+        <li Class="AudioGrain_Folder">
+          <clipFolderPath>MSSF_BlobbyGun/Fire</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>60~70</volumeRange>
+      <pitchRange>0.9311764~1.068824</pitchRange>
+      <distRange>0~70</distRange>
+      <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
