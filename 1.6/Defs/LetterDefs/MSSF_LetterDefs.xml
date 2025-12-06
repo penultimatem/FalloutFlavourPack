@@ -49,12 +49,12 @@
             <li Class="CompProperties_Forbiddable"/>
             <li Class="MSSFP.Comps.CompProperties_Readable">
                 <letterDef>MSSF_CallingCard</letterDef>
-                <letterLabel>Calling Card</letterLabel>
-                <letterText>The front of the card bares a mysterious emblem you don't recognise, the back of the card has the following hastily scribbled on it:\n\n"Business of the Speaky Blinders - Let dead men rest."</letterText>
+                <letterLabel>The Next Step...</letterLabel>
+                <letterText>Now that enough trust has grown between Postie and Shelby, she begins to recall the last time she saw the platinum chip.\n\nShe explains that three people were present on the day of the robbery - her, a new recruit called Toe Zuckle, and Gaunt, the now de facto leader of the Speaky Blinders.\n\nShe personally assigned Gaunt the task of delivering the chip to their go-between contact, who, in turn, would go on to deliver it to the original contractor. As Gaunt is the only person who met this go-between contact, only he would know the next place to look.</letterText>
                 <buttonLabel>Read</buttonLabel>
                 <buttonDesc>Read the strange letter</buttonDesc>
                 <buttonIcon>MSS_MysteriousLetter</buttonIcon>
-                <destroyOnRead>false</destroyOnRead>
+                <destroyOnRead>true</destroyOnRead>
             </li>
         </comps>
 

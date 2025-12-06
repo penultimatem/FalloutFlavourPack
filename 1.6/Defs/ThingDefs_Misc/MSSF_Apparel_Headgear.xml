@@ -50,7 +50,7 @@
 
   <ThingDef ParentName="MechanitorHeadsetBase">
     <defName>MSSF_MechHat2</defName>
-    <label>Postboy Array</label>
+    <label>Postboy Helm</label>
     <description>A combined uniform hat, comms computer, and head-mounted intelligent signaling array that enhances a roboticists's control bandwidth. This allows them to control more robots.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
@@ -60,8 +60,8 @@
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
+      <Apparel_ArrayHeadset>1</Apparel_ArrayHeadset>
       <MSSF_MechHat1>1</MSSF_MechHat1>
-      <Apparel_IntegratorHeadset>1</Apparel_IntegratorHeadset>
     </costList>
     <recipeMaker>
       <researchPrerequisite>HighMechtech</researchPrerequisite>
@@ -131,7 +131,7 @@
       <Plasteel>75</Plasteel>
       <PowerfocusChip>1</PowerfocusChip>
       <MSSF_MechHat2>1</MSSF_MechHat2>
-      <Apparel_ArrayHeadset>1</Apparel_ArrayHeadset>
+      <Apparel_IntegratorHeadset>1</Apparel_IntegratorHeadset>
     </costList>
     <apparel>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/T3_PostmasterHelmet/PostmasterHelmet</wornGraphicPath>
